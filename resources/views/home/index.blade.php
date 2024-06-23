@@ -24,7 +24,6 @@
             position: fixed;
             width: 100%;
             height: 100%;
-            z-index: -1;
             cursor: pointer; /* Allow particles to interact with cursor */
         }
 
@@ -46,7 +45,7 @@
 
         .custom-card {
             width: 90%;
-            max-width: 800px;
+            max-width: 600px;
             margin: auto;
             padding: 0px;
             background-color: rgba(255, 255, 255, 0.9);
@@ -55,6 +54,7 @@
         }
 
         .list-group-item {
+
             padding: 0px;
             font-size: 14px;
             border: none;
