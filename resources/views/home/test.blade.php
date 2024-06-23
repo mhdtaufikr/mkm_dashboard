@@ -7,25 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>MKM Digitalization</title>
+    <title>MKM Application</title>
     <link href="{{ asset('assets/css/styles.css') }}" rel="stylesheet" />
     <link rel="icon" href="{{ asset('assets/img/logo_kop2.gif') }}" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" crossorigin="anonymous" />
 
     <style>
         body {
-            background: linear-gradient(180deg, #000000 0%, #0f0c20 100%);
-            color: #000000;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            overflow-x: hidden;
+            background: #000;
         }
 
         #particles-js {
-            position: fixed;
+            position: absolute;
             width: 100%;
             height: 100%;
             z-index: -1;
-            cursor: pointer; /* Allow particles to interact with cursor */
         }
 
         @keyframes cardAnimation {
@@ -48,73 +44,62 @@
             width: 90%;
             max-width: 800px;
             margin: auto;
-            padding: 0px;
-            background-color: rgba(255, 255, 255, 0.9);
-            border-radius: 15px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9); /* Set background color with opacity */
+            border-radius: 15px; /* Add border radius for rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional: Add box shadow for depth */
         }
 
         .list-group-item {
-            padding: 0px;
-            font-size: 14px;
+            padding: 15px;
+            font-size: 18px;
             border: none;
             transition: background-color 0.3s ease;
-            background-color: rgba(255, 255, 255, 0.1);
-            border-radius: 8px;
-            margin-bottom: 10px;
         }
 
         .list-group-item i {
-            margin-bottom: 0px;
+            margin-bottom: 5px;
             display: block;
         }
 
         .list-group-item:hover {
-            background-color: rgba(83, 79, 79, 0.2);
+            background-color: #f8f9fa;
+            border-radius: 8px;
         }
 
         .list-group-item a {
-            color: #000000;
+            color: #333;
             text-decoration: none;
         }
 
         .card-footer {
-            background-color: rgba(255, 255, 255, 0.1);
+            background-color: transparent;
             border-top: none;
         }
 
         .card-footer .small {
-            color: #ccc;
+            color: #777;
         }
 
         .search-container {
             text-align: center;
-            margin-bottom: 0px;
+            margin-bottom: 10px;
         }
 
         .search-box {
-            width: 40%;
+            width: 50%;
             padding: 8px;
-            font-size: 14px;
+            font-size: 16px;
             border: 1px solid #ccc;
             border-radius: 5px;
-            background-color: rgba(255, 255, 255, 0.1);
-            color: #000000;
-            outline: none;
-        }
-
-        .search-box::placeholder {
-            color: #070707;
         }
 
         .location-title {
             text-align: center;
-            margin-top: 20px;
-            margin-bottom: 10px;
-            font-size: 18px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            font-size: 15px;
             font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 1px;
         }
 
         .fade-in {
@@ -133,7 +118,7 @@
     </style>
 </head>
 
-<body>
+<body class="bg-dark">
     <div id="particles-js"></div>
     <div id="layoutAuthentication">
         <div id="layoutAuthentication_content">
@@ -159,21 +144,21 @@
                                     <h3 class="text-center font-weight-bold mb-3">Mitsubishi Krama Yudha Motors and Manufacturing</h3>
 
                                     <div class="search-container">
-                                        <input type="text" id="searchBox" class="search-box" placeholder="Search applications...">
+                                        <input  type="text" id="searchBox" class="search-box" placeholder="Search applications...">
                                     </div>
 
                                     <div class="location-title">General Application</div>
                                     <div class="row fade-in" id="generalApplication">
                                         <div class="col-md-6 col-lg-4 list-group-item text-center">
                                             <a target="_blank" href="http://172.17.210.227:8800/">
-                                                <img width="40" height="220" class="img-fluid mb-2" src="{{ asset('assets/img/assets.png') }}" alt="">
-                                                <p style="margin-top: -5px;margin-bottom:-5px">Asset Management</p>
+                                                <img width="40" height="220" class="img-fluid mb-2" src="{{ asset('assets/img/assets.png') }}" alt=""><br>
+                                                Asset Management
                                             </a>
                                         </div>
                                         <div class="col-md-6 col-lg-4 list-group-item text-center">
                                             <a target="_blank" href="http://172.17.210.227:7000/">
-                                                <img width="40" height="220" class="img-fluid mb-2" src="{{ asset('assets/img/laptop.png') }}" alt="">
-                                                <p style="margin-top: -5px;margin-bottom:-5px">QR Code Generator</p>
+                                                <img width="40" height="220" class="img-fluid mb-2" src="{{ asset('assets/img/laptop.png') }}" alt=""><br>
+                                                QR Code Generator
                                             </a>
                                         </div>
                                     </div>
@@ -182,8 +167,8 @@
                                     <div class="row fade-in" id="enginePlant">
                                         <div class="col-md-6 col-lg-4 list-group-item text-center">
                                             <a target="_blank" href="http://172.17.210.227:8080/">
-                                                <img width="40" height="220" class="img-fluid mb-2" src="{{ asset('assets/img/pallet.png') }}" alt="">
-                                                <p style="margin-top: -5px;margin-bottom:-5px">Pallet Tracing</p>
+                                                <img width="40" height="220" class="img-fluid mb-2" src="{{ asset('assets/img/pallet.png') }}" alt=""><br>
+                                                Pallet Tracing
                                             </a>
                                         </div>
                                     </div>
@@ -192,14 +177,14 @@
                                     <div class="row fade-in" id="stampingPlant">
                                         <div class="col-md-6 col-lg-4 list-group-item text-center">
                                             <a target="_blank" href="http://172.17.210.227:8888/">
-                                                <img width="40" height="220" class="img-fluid mb-2" src="{{ asset('assets/img/chassis.png') }}" alt="">
-                                                <p style="margin-top: -5px;margin-bottom:-5px">Checksheet SL-Frame</p>
+                                                <img width="40" height="220" class="img-fluid mb-2" src="{{ asset('assets/img/chassis.png') }}" alt=""><br>
+                                                Checksheet SL-Frame
                                             </a>
                                         </div>
                                         <div class="col-md-6 col-lg-4 list-group-item text-center">
                                             <a target="_blank" href="#">
-                                                <img width="40" height="220" class="img-fluid mb-2" src="{{ asset('assets/img/checksheet.png') }}" alt="">
-                                                <p style="margin-top: -5px;margin-bottom:-5px">Checksheet Preventive Maintenance</p>
+                                                <img width="40" height="220" class="img-fluid mb-2" src="{{ asset('assets/img/checksheet.png') }}" alt=""><br>
+                                                Checksheet Preventive Maintenance
                                             </a>
                                         </div>
                                     </div>
