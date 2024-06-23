@@ -11,6 +11,9 @@
     <link href="{{ asset('assets/css/styles.css') }}" rel="stylesheet" />
     <link rel="icon" href="{{ asset('assets/img/logo_kop2.gif') }}" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="{{ asset('particles.json') }}"></script>
+
 
     <style>
         body {
@@ -219,8 +222,8 @@
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script>
         particlesJS.load('particles-js', '/particles.json', function() {
-            console.log('particles.js loaded - callback');
-        });
+        console.log('particles.js loaded - callback');
+    });
 
         document.getElementById('searchBox').addEventListener('keyup', function() {
             const searchValue = this.value.toLowerCase();
