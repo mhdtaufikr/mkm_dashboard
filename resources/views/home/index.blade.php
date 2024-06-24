@@ -176,7 +176,7 @@
                                         <div class="col-md-6 col-lg-4 list-group-item text-center">
                                             <a target="_blank" href="http://172.17.210.227:7000/">
                                                 <img width="40" height="220" class="img-fluid mb-2" src="{{ asset('assets/img/laptop.png') }}" alt="">
-                                                <p style="margin-top: -5px;margin-bottom:-5px">QR Code Generator</p>
+                                                <p style="margin-top: -5px;margin-bottom:-5px">QR Code Generator (RSPR)</p>
                                             </a>
                                         </div>
                                     </div>
