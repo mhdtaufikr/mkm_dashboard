@@ -159,7 +159,7 @@
                                         <img width="150" height="200" class="img-fluid mb-3" src="{{ asset('assets/img/logo.png') }}" alt="">
                                     </div>
 
-                                    <h3 class="text-center font-weight-bold mb-3">Mitsubishi Krama Yudha Motors and Manufacturing</h3>
+                                    <h3 class="text-center font-weight-bold mb-3">PT. Mitsubishi Krama Yudha Motors and Manufacturing</h3>
 
                                     <div class="search-container">
                                         <input type="text" id="searchBox" class="search-box" placeholder="Search applications...">
